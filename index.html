@@ -932,6 +932,9 @@
           btn.textContent = 'Message sent ✓';
           btn.style.background = '#4a7c59';
           this.reset();
+          setTimeout(() => {
+            window.location.href = '/thankyou.html';
+          }, 800);
         } else {
           btn.textContent = 'Something went wrong';
           btn.style.background = '#c0392b';
