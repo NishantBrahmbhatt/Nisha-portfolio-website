@@ -883,11 +883,8 @@
     window.addEventListener('scroll', () => topBtn.classList.toggle('visible', window.scrollY > 400), { passive: true });
     topBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 
-    // ── Contact form — Formspree ──
-    // STEP 1: Go to formspree.io, sign up, create a form
-    // STEP 2: Replace YOUR_FORM_ID below with the ID from your Formspree dashboard
-    // STEP 3: Test with brahmbhattnishantr@gmail.com, then swap to Accounts@nashandco.uk
-    const FORMSPREE_ID = 'xkokanvz';
+    // ── Contact form — Web3Forms ──
+    const WEB3FORMS_KEY = 'dbe3ac4a-42b8-4251-b6fb-3d1c57701115';
 
     const fields = [
       { id: 'fname',    errId: 'fnameError',    check: v => v.trim().length > 0 },
@@ -915,6 +912,8 @@
       btn.disabled = true;
 
       const data = {
+        access_key: WEB3FORMS_KEY,
+        subject: 'New enquiry — Nash & Co website',
         name:    document.getElementById('fname').value,
         email:   document.getElementById('femail').value,
         service: document.getElementById('fservice').value,
@@ -922,7 +921,7 @@
       };
 
       try {
-        const res = await fetch(`https://formspree.io/f/${FORMSPREE_ID}`, {
+        const res = await fetch('https://api.web3forms.com/submit', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
           body: JSON.stringify(data),
