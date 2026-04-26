@@ -4,6 +4,24 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Nisha Hansewraj – Accounting & Finance</title>
+
+  <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAADq0lEQVR4nO2bS0wTQRzGv11atPIOSISCENsLUTHEKoWDnKQeiYkmPg8SXxdIuGoEuXAxJhIuYvQg6EkSDwRJVCIHAU2VlEM5AIJYGgmpkJZUXu16MEvK0m33MVu22/2durM7M//vm/9Mt9sdCglirLOWEXO9vWmEUiqWSBTrRKzgeChlCPFGSQvnQtoIYo0pLZwLKSNkN5Jo4VzkGiG58l4L5yLVCFpKJbWJB6THJNoANYpnkRKb4LRRs/BoCJ0SgjIg2cQDwmOOa0AyimcRErukRVBLxDQgmUefJZ4GXgO0IJ4llpaoBmhJPAufJn0N4BZocfRZomnTMyDyQMujz8LVqGcA+yEVRp8lUmvKZwAFCB/9ioYnyC617SjzfHmOha8veOukGU2w3fkQ9dySux8/Pnag7EwzDp24GPWateV5uHov7Sgz5ZWh8upr3j7dfXcR8E7wnmexN41QogzYDiD/CCov9/w/YMKYfNsMv+d73Hol1Y0wn74BZ7cDofXV3e1GCJsbfozFib64bVac70K2uQp//8xi4tVVMTJgbxqh5E8Bioa1vg1GU57spvYCWQYszwwDYGDMyIfF0QoQ8DPR0HJW/5Wfo/B+6wUA5JSegtl2nVhgiWCss5aRPWSe0W74F8YBAObqRmSbq2QHlkhkG8AwYUwPtmIz6ANF0bA42mA05RIILTEQmbSbQR+mB1vBMGGkZxTAUv8ACv7tSBQDqYb8C+PwjD1Dac1t5ByuRrHtGrzOl5LbK69rQXldC6nweCFmAAB4nT3IKqpEbnkNSuw3EfC6EPC6JLUl9j5AKoS/txjMvG/HRmARFEXD6ngIgymHbBeEIf7FvbXmx9S7+2BCm0jPPAjLWXWvB4rcuawuujH/uQsAkFtmR/HJK0p0QwTFbt1+u97ANzUEACix30JW0XGlupKFoveus0MdWFv5BYpOg/VcOwz71bceKGpAaCOIqYF7CG+tIz2zEIXHGpTsThK00m9jBX0zmPv0CABA0WlKdiUaMj+HBbA0OYAld38iuhKN7CdCABDaWIXzqSNmXdqwD0cvdONAgXXXA5GkeyKkFbanQKLeylQTrObke4RDmG0DUikLIrXqGRB5kApZwNWoZwC3QMtZEE2bngHRCrWYBXyaeDNASybE0hJzCmjBhHga9DUg3gXJnAVCYheUAclogtCYRQtT+09nsYMleg1QczZIiU3SIqhGE6TGpG+bIxVIym6c5JKyW2e5pOzmaT7Uun3+H62XWyjJlzw4AAAAAElFTkSuQmCC" />
+
+  <meta name="description" content="Nisha Hansewraj is an accounting and finance professional based in Brentford, London, offering bookkeeping, VAT returns, tax preparation, payroll, and financial reporting for individuals, the self-employed, and small businesses." />
+  <meta name="author" content="Nisha Hansewraj" />
+  <meta property="og:title" content="Nisha Hansewraj – Accounting & Finance" />
+  <meta property="og:description" content="Bookkeeping, VAT returns, tax preparation, and more — for individuals, the self-employed, and small businesses in London." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://nishahansewraj.co.uk" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Nisha Hansewraj – Accounting & Finance" />
+  <meta name="twitter:description" content="Bookkeeping, VAT returns, tax preparation, and more — for individuals, the self-employed, and small businesses in London." />
+  <link rel="canonical" href="https://nishahansewraj.co.uk" />
+
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"LocalBusiness","name":"Nisha Hansewraj","description":"Accounting and finance professional offering bookkeeping, VAT returns, tax preparation, payroll, and financial reporting.","url":"https://nishahansewraj.co.uk","address":{"@type":"PostalAddress","addressLocality":"Brentford","addressRegion":"London","addressCountry":"GB"},"sameAs":["https://www.linkedin.com/in/nishahansewraj/"],"knowsAbout":["Bookkeeping","VAT Returns","Tax Preparation","Payroll","Financial Reporting","SME Accounting"]}
+  </script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
@@ -21,9 +39,13 @@
       --border:  #e4ddd3;
       --serif:   'Cormorant Garamond', Georgia, serif;
       --sans:    'DM Sans', sans-serif;
+      --nav-h:   68px;
     }
 
     html { scroll-behavior: smooth; }
+    section[id] { scroll-margin-top: var(--nav-h); }
+    /* About section scroll offset includes the consult banner height above it */
+    section#about { scroll-margin-top: 0; }
 
     body {
       background: var(--cream);
@@ -34,393 +56,608 @@
       overflow-x: hidden;
     }
 
+    :focus-visible { outline: 2px solid var(--honey); outline-offset: 3px; border-radius: 2px; }
+
+    /* noise */
+    body::after {
+      content: ''; position: fixed; inset: 0; z-index: 998;
+      pointer-events: none; opacity: 0.025;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+      background-size: 180px 180px;
+    }
+
+    /* ── PRELOADER ── */
+    #preloader {
+      position: fixed; inset: 0; z-index: 9999;
+      background: var(--cream);
+      display: flex; align-items: center; justify-content: center;
+      transition: opacity 0.5s ease, visibility 0.5s ease;
+    }
+    #preloader.done { opacity: 0; visibility: hidden; }
+    .preloader-text {
+      font-family: var(--serif); font-size: 1.6rem; font-weight: 300;
+      color: var(--honey); letter-spacing: 0.2em;
+      animation: pulse 1s ease-in-out infinite;
+    }
+    @keyframes pulse { 0%,100%{opacity:0.3} 50%{opacity:1} }
+
     /* ── NAV ── */
-    nav {
-      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    nav#mainNav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 200;
       display: flex; align-items: center; justify-content: space-between;
-      padding: 1.4rem 4rem;
-      background: rgba(250,247,242,0.88);
-      backdrop-filter: blur(10px);
+      padding: 0 4rem; height: var(--nav-h);
+      background: rgba(250,247,242,0.92); backdrop-filter: blur(12px);
       border-bottom: 1px solid var(--border);
+      transition: transform 0.35s ease;
       animation: fadeDown 0.8s ease both;
     }
+    nav#mainNav.hide { transform: translateY(-100%); }
     .nav-logo {
-      font-family: var(--serif);
-      font-size: 1.2rem;
-      font-weight: 400;
-      letter-spacing: 0.02em;
-      color: var(--ink);
-      text-decoration: none;
-    }
-    .nav-links { display: flex; gap: 2.5rem; list-style: none; }
-    .nav-links a {
-      font-size: 0.8rem;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: var(--muted);
-      text-decoration: none;
+      font-family: var(--serif); font-size: 1.2rem; font-weight: 400;
+      letter-spacing: 0.02em; color: var(--ink); text-decoration: none;
       transition: color 0.2s;
     }
-    .nav-links a:hover { color: var(--honey); }
+    .nav-logo:hover { color: var(--honey); }
+    .nav-links { display: flex; gap: 2.5rem; list-style: none; }
+    .nav-links a {
+      font-size: 0.78rem; letter-spacing: 0.1em; text-transform: uppercase;
+      color: var(--muted); text-decoration: none; transition: color 0.2s;
+    }
+    .nav-links a:hover, .nav-links a.active { color: var(--honey); }
 
-    /* ── HERO ── */
+    /* ── HAMBURGER ── */
+    .hamburger {
+      display: none; flex-direction: column; justify-content: center; gap: 5px;
+      background: none; border: none; cursor: pointer; padding: 6px; z-index: 201;
+    }
+    .hamburger span {
+      display: block; width: 22px; height: 2px;
+      background: var(--ink); border-radius: 2px;
+      transition: transform 0.3s, opacity 0.3s;
+    }
+    .hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .hamburger.open span:nth-child(2) { opacity: 0; }
+    .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+    .mobile-menu {
+      display: none;
+      position: fixed; top: var(--nav-h); left: 0; right: 0; z-index: 199;
+      background: rgba(250,247,242,0.98); backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      flex-direction: column;
+      max-height: 0; overflow: hidden; opacity: 0; pointer-events: none;
+      transition: max-height 0.35s ease, opacity 0.3s ease;
+    }
+    .mobile-menu.open { max-height: 260px; opacity: 1; pointer-events: auto; }
+    .mobile-menu a {
+      font-size: 0.85rem; letter-spacing: 0.1em; text-transform: uppercase;
+      color: var(--muted); text-decoration: none;
+      padding: 1rem 2rem; border-bottom: 1px solid var(--border);
+      transition: color 0.2s, background 0.2s; display: block;
+    }
+    .mobile-menu a:last-child { border-bottom: none; }
+    .mobile-menu a:hover { color: var(--honey); background: var(--warm); }
+
+    /* ── SECTION DIVIDER ── */
+    .section-divider {
+      width: 100%; height: 1px;
+      background: linear-gradient(to right, transparent, var(--border) 20%, var(--honey-lt) 50%, var(--border) 80%, transparent);
+      border: none; margin: 0;
+    }
+
+    /* ═══════════════════════════════════════
+       HERO — redesigned to feel full
+    ═══════════════════════════════════════ */
     .hero {
-      min-height: 100vh;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
+      min-height: 100vh; min-height: 100dvh;
+      display: grid; grid-template-columns: 1fr 1fr;
       align-items: center;
-      padding: 8rem 4rem 4rem;
-      gap: 4rem;
+      padding: calc(var(--nav-h) + 2rem) 4rem 2rem;
+      gap: 3rem;
+      position: relative; overflow: hidden;
       animation: fadeUp 1s 0.2s ease both;
     }
-    .hero-text { max-width: 520px; }
+
+    /* Vertical accent line beside text */
+    .hero-accent-line {
+      position: absolute; left: 4rem; top: 50%;
+      transform: translateY(-50%);
+      width: 2px; height: 40vh;
+      background: linear-gradient(to bottom, transparent, var(--honey) 30%, var(--honey) 70%, transparent);
+      opacity: 0.18;
+    }
+
+    .hero-text { max-width: 500px; padding-left: 2rem; position: relative; z-index: 1; }
     .hero-eyebrow {
-      font-size: 0.75rem;
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-      color: var(--honey);
-      margin-bottom: 1.4rem;
+      font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase;
+      color: var(--honey); margin-bottom: 1.2rem;
+      display: flex; align-items: center; gap: 0.8rem;
+    }
+    .hero-eyebrow::before {
+      content: ''; display: block; width: 24px; height: 1px; background: var(--honey);
     }
     .hero-name {
-      font-family: var(--serif);
-      font-size: clamp(3rem, 5vw, 5rem);
-      font-weight: 300;
-      line-height: 1.05;
-      letter-spacing: -0.01em;
-      margin-bottom: 1.6rem;
-      color: var(--ink);
+      font-family: var(--serif); font-size: clamp(2.8rem, 4.8vw, 5rem);
+      font-weight: 300; line-height: 1.02; letter-spacing: -0.01em;
+      margin-bottom: 1.4rem; color: var(--ink);
     }
     .hero-name em { font-style: italic; color: var(--honey); }
     .hero-desc {
-      font-size: 1.05rem;
-      color: var(--muted);
-      max-width: 400px;
-      margin-bottom: 2.5rem;
-      font-weight: 300;
+      font-size: 0.98rem; color: var(--muted);
+      max-width: 380px; margin-bottom: 1.8rem; font-weight: 300; line-height: 1.75;
     }
+
+    /* Service pills row */
+    .hero-pills {
+      display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 2rem;
+    }
+    .hero-pill {
+      font-size: 0.68rem; letter-spacing: 0.08em; text-transform: uppercase;
+      border: 1px solid var(--border); color: var(--muted);
+      padding: 0.28rem 0.8rem; border-radius: 20px;
+      background: var(--warm);
+    }
+
     .btn-primary {
-      display: inline-block;
-      padding: 0.85rem 2.2rem;
-      background: var(--honey);
-      color: #fff;
-      font-family: var(--sans);
-      font-size: 0.8rem;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      text-decoration: none;
-      border-radius: 2px;
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      padding: 0.85rem 2rem;
+      background: var(--honey); color: #fff; font-family: var(--sans);
+      font-size: 0.78rem; letter-spacing: 0.1em; text-transform: uppercase;
+      text-decoration: none; border-radius: 2px;
       transition: background 0.25s, transform 0.2s;
     }
+    .btn-primary svg { width: 14px; height: 14px; stroke: currentColor; fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; transition: transform 0.2s; }
     .btn-primary:hover { background: var(--ink); transform: translateY(-1px); }
+    .btn-primary:hover svg { transform: translateX(3px); }
 
+    /* Hero right — card with more presence */
     .hero-visual {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: relative;
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      gap: 1.2rem; position: relative; z-index: 1;
     }
+
     .hero-card {
-      background: var(--warm);
-      border: 1px solid var(--border);
-      border-radius: 4px;
-      padding: 3rem 2.5rem;
-      width: 320px;
-      text-align: center;
-      position: relative;
+      background: var(--warm); border: 1px solid var(--border);
+      border-radius: 4px; padding: 2.4rem 2rem; width: 300px;
+      text-align: center; position: relative;
     }
     .hero-card::before {
-      content: '';
-      position: absolute; inset: -12px;
-      border: 1px solid var(--border);
-      border-radius: 6px;
-      pointer-events: none;
+      content: ''; position: absolute; inset: -10px;
+      border: 1px solid var(--border); border-radius: 6px; pointer-events: none;
     }
+
     .avatar-circle {
       width: 90px; height: 90px;
       background: linear-gradient(135deg, var(--honey-lt), var(--honey));
-      border-radius: 50%;
-      margin: 0 auto 1.2rem;
+      border-radius: 50%; margin: 0 auto 0.5rem;
       display: flex; align-items: center; justify-content: center;
-      font-family: var(--serif);
-      font-size: 2rem;
-      color: #fff;
-      font-weight: 300;
+      font-family: var(--serif); font-size: 2rem; color: #fff; font-weight: 300;
+      position: relative; overflow: hidden;
+    }
+    .avatar-photo {
+      position: absolute; inset: 0; width: 100%; height: 100%;
+      object-fit: cover; border-radius: 50%;
+    }
+    /* No dot on circle — removed */
+    .availability-label {
+      font-size: 0.62rem; letter-spacing: 0.08em; text-transform: uppercase;
+      color: #5aaa6e; margin-bottom: 0.7rem;
+      display: flex; align-items: center; justify-content: center; gap: 0.35rem;
+    }
+    .avail-dot {
+      width: 7px; height: 7px; background: #5aaa6e; border-radius: 50%; display: inline-block;
+      animation: availPulse 2.5s ease-in-out infinite;
+    }
+    @keyframes availPulse {
+      0%,100%{box-shadow:0 0 0 0 rgba(90,170,110,0.5)}
+      50%{box-shadow:0 0 0 4px rgba(90,170,110,0)}
     }
     .hero-card-name {
-      font-family: var(--serif);
-      font-size: 1.4rem;
-      font-weight: 400;
-      margin-bottom: 0.3rem;
+      font-family: var(--serif); font-size: 1.3rem; font-weight: 400; margin-bottom: 0.2rem;
     }
     .hero-card-title {
-      font-size: 0.78rem;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: var(--honey);
-      margin-bottom: 1.5rem;
+      font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase;
+      color: var(--honey); margin-bottom: 1.2rem;
     }
     .hero-card-stats {
-      display: flex;
-      justify-content: space-around;
-      border-top: 1px solid var(--border);
-      padding-top: 1.2rem;
-      margin-top: 0.5rem;
+      display: flex; justify-content: space-around;
+      border-top: 1px solid var(--border); padding-top: 1rem;
     }
     .stat { text-align: center; }
     .stat-num {
-      font-family: var(--serif);
-      font-size: 1.8rem;
-      font-weight: 300;
-      color: var(--honey);
-      line-height: 1;
+      font-family: var(--serif); font-size: 1.6rem; font-weight: 300;
+      color: var(--honey); line-height: 1;
     }
     .stat-label {
-      font-size: 0.7rem;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: var(--muted);
-      margin-top: 0.3rem;
+      font-size: 0.62rem; letter-spacing: 0.08em; text-transform: uppercase;
+      color: var(--muted); margin-top: 0.2rem;
     }
 
-    /* ── SECTION SHARED ── */
-    section { padding: 6rem 4rem; }
-    .section-label {
-      font-size: 0.72rem;
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-      color: var(--honey);
-      margin-bottom: 0.8rem;
+    /* Small trust strip below card */
+    .hero-trust {
+      display: flex; gap: 1.2rem; align-items: center;
+      font-size: 0.68rem; letter-spacing: 0.06em; text-transform: uppercase;
+      color: var(--muted);
     }
-    .section-title {
-      font-family: var(--serif);
-      font-size: clamp(2rem, 3.5vw, 3rem);
-      font-weight: 300;
-      line-height: 1.15;
-      margin-bottom: 1rem;
+    .hero-trust-item {
+      display: flex; align-items: center; gap: 0.35rem;
     }
-    .section-title em { font-style: italic; }
-    .divider {
-      width: 48px; height: 1px;
-      background: var(--honey);
-      margin: 1.5rem 0;
+    .hero-trust-item svg {
+      width: 13px; height: 13px; stroke: var(--honey); fill: none;
+      stroke-width: 2; stroke-linecap: round; stroke-linejoin: round;
     }
 
     /* ── ABOUT ── */
     .about {
+      min-height: 100vh; min-height: 100dvh;
       background: var(--warm);
-      border-top: 1px solid var(--border);
-      border-bottom: 1px solid var(--border);
+      display: flex; align-items: center;
+      padding: 1.5rem 4rem 2rem;
     }
     .about-inner {
-      max-width: 1100px; margin: 0 auto;
-      display: grid; grid-template-columns: 1fr 1.6fr; gap: 6rem; align-items: center;
+      max-width: 1100px; width: 100%; margin: 0 auto;
+      display: grid; grid-template-columns: 1fr 1.6fr; gap: 5rem; align-items: center;
     }
-    .about-body { color: var(--muted); font-weight: 300; font-size: 1.02rem; }
-    .about-body p + p { margin-top: 1rem; }
-    .credentials { margin-top: 2rem; display: flex; flex-wrap: wrap; gap: 0.6rem; }
+    .section-label { font-size: 0.7rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--honey); margin-bottom: 0.8rem; }
+    .section-title { font-family: var(--serif); font-size: clamp(2rem, 3.2vw, 2.8rem); font-weight: 300; line-height: 1.15; }
+    .section-title em { font-style: italic; }
+    .divider { width: 48px; height: 1px; background: var(--honey); margin: 1.4rem 0; }
+    .about-body { color: var(--muted); font-weight: 300; font-size: 0.98rem; }
+    .about-body p + p { margin-top: 0.9rem; }
+    .credentials { margin-top: 1.8rem; display: flex; flex-wrap: wrap; gap: 0.5rem; }
     .badge {
-      font-size: 0.72rem;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      border: 1px solid var(--honey);
-      color: var(--honey);
-      padding: 0.35rem 0.9rem;
-      border-radius: 2px;
+      font-size: 0.68rem; letter-spacing: 0.08em; text-transform: uppercase;
+      border: 1px solid var(--honey); color: var(--honey);
+      padding: 0.28rem 0.8rem; border-radius: 2px;
     }
 
-    /* ── SERVICES ── */
-    .services-inner { max-width: 1100px; margin: 0 auto; }
+    /* ── SERVICES — full viewport, compact grid ── */
+    section#services {
+      min-height: 100vh; min-height: 100dvh;
+      display: flex; align-items: center; justify-content: center;
+      padding: 2rem 4rem;
+    }
+    .services-inner { max-width: 1100px; width: 100%; margin: 0 auto; }
+    .services-header { margin-bottom: 1.2rem; }
     .services-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 1.5rem;
-      margin-top: 3rem;
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      gap: 0.9rem;
     }
     .service-card {
-      background: var(--warm);
-      border: 1px solid var(--border);
-      border-radius: 2px;
-      padding: 2.4rem 2rem;
+      background: var(--warm); border: 1px solid var(--border); border-radius: 2px;
+      padding: 1.4rem 1.4rem 1.2rem;
       transition: border-color 0.25s, transform 0.25s;
       position: relative; overflow: hidden;
     }
     .service-card::after {
-      content: '';
-      position: absolute; bottom: 0; left: 0; right: 0;
-      height: 2px;
-      background: var(--honey);
-      transform: scaleX(0);
-      transform-origin: left;
-      transition: transform 0.3s;
+      content: ''; position: absolute; bottom: 0; left: 0; right: 0;
+      height: 2px; background: var(--honey);
+      transform: scaleX(0); transform-origin: left; transition: transform 0.3s;
     }
-    .service-card:hover { border-color: var(--honey-lt); transform: translateY(-3px); }
+    .service-card:hover { border-color: var(--honey-lt); transform: translateY(-2px); }
     .service-card:hover::after { transform: scaleX(1); }
-    .service-icon {
-      font-size: 1.6rem;
-      margin-bottom: 1.2rem;
-      display: block;
+    .service-arrow {
+      display: inline-flex; align-items: center; gap: 0.3rem;
+      font-size: 0.68rem; letter-spacing: 0.08em; text-transform: uppercase;
+      color: var(--honey); margin-top: 0.7rem;
+      opacity: 0; transform: translateX(-4px);
+      transition: opacity 0.25s, transform 0.25s;
     }
-    .service-name {
-      font-family: var(--serif);
-      font-size: 1.4rem;
-      font-weight: 400;
-      margin-bottom: 0.8rem;
+    .service-arrow svg { width: 11px; height: 11px; stroke: var(--honey); fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+    .service-card:hover .service-arrow { opacity: 1; transform: none; }
+    .service-badge {
+      display: inline-block; font-size: 0.58rem; letter-spacing: 0.07em; text-transform: uppercase;
+      background: var(--honey); color: #fff; padding: 0.18rem 0.55rem; border-radius: 2px; margin-bottom: 0.6rem;
     }
-    .service-desc { font-size: 0.9rem; color: var(--muted); font-weight: 300; }
+    .service-icon { width: 24px; height: 24px; margin-bottom: 0.7rem; display: block; color: var(--honey); }
+    .service-icon svg { width: 100%; height: 100%; stroke: currentColor; fill: none; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+    .service-name { font-family: var(--serif); font-size: 1.15rem; font-weight: 400; margin-bottom: 0.4rem; }
+    .service-desc { font-size: 0.82rem; color: var(--muted); font-weight: 300; line-height: 1.55; }
 
     /* ── TESTIMONIALS ── */
     .testimonials {
-      background: var(--warm);
-      border-top: 1px solid var(--border);
-      border-bottom: 1px solid var(--border);
+      background: var(--warm); padding: 5rem 4rem;
     }
     .testimonials-inner { max-width: 1100px; margin: 0 auto; }
-    .testimonials-grid {
-      display: grid; grid-template-columns: repeat(3, 1fr);
-      gap: 1.5rem; margin-top: 3rem;
-    }
-    .testimonial-card {
-      background: var(--cream);
-      border: 1px solid var(--border);
-      border-radius: 2px;
-      padding: 2rem;
-    }
-    .quote-mark {
-      font-family: var(--serif);
-      font-size: 3.5rem;
-      color: var(--honey-lt);
-      line-height: 1;
-      margin-bottom: 0.5rem;
-    }
-    .quote-text { font-size: 0.95rem; color: var(--muted); font-weight: 300; font-style: italic; margin-bottom: 1.5rem; }
+    .testimonials-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 1.4rem; margin-top: 2.5rem; }
+    .testimonial-card { background: var(--cream); border: 1px solid var(--border); border-radius: 2px; padding: 1.8rem; }
+    .quote-mark { font-family: var(--serif); font-size: 3rem; color: var(--honey-lt); line-height: 1; margin-bottom: 0.4rem; }
+    .quote-text { font-size: 0.92rem; color: var(--muted); font-weight: 300; font-style: italic; margin-bottom: 1.2rem; }
     .quote-author { font-size: 0.8rem; font-weight: 500; letter-spacing: 0.04em; }
-    .quote-role { font-size: 0.75rem; color: var(--muted); }
+    .quote-role { font-size: 0.72rem; color: var(--muted); }
 
     /* ── CONTACT ── */
-    .contact-inner {
-      max-width: 1100px; margin: 0 auto;
-      display: grid; grid-template-columns: 1fr 1.2fr; gap: 6rem; align-items: start;
+    #contact {
+      min-height: 100vh; min-height: 100dvh;
+      display: flex; align-items: center;
+      padding: 2rem 4rem;
     }
-    .contact-sub { color: var(--muted); font-weight: 300; margin-bottom: 2rem; }
-    .contact-info { display: flex; flex-direction: column; gap: 1rem; margin-top: 2rem; }
-    .contact-row { display: flex; align-items: center; gap: 1rem; font-size: 0.9rem; }
-    .contact-row span:first-child { color: var(--honey); font-size: 1rem; width: 20px; }
-    .contact-form { display: flex; flex-direction: column; gap: 1.2rem; }
-    .form-group { display: flex; flex-direction: column; gap: 0.4rem; }
-    label { font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); }
+    .contact-inner { max-width: 1100px; width: 100%; margin: 0 auto; display: grid; grid-template-columns: 1fr 1.2fr; gap: 5rem; align-items: start; }
+    .contact-sub { color: var(--muted); font-weight: 300; margin-bottom: 2rem; font-size: 0.97rem; }
+    .contact-info { display: flex; flex-direction: column; gap: 1rem; margin-top: 1.8rem; }
+    .contact-row {
+      display: flex; align-items: center; gap: 0.9rem;
+      font-size: 0.9rem; color: var(--ink);
+    }
+    .contact-icon {
+      width: 36px; height: 36px; flex-shrink: 0;
+      background: var(--warm); border: 1px solid var(--border); border-radius: 2px;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .contact-icon svg { width: 15px; height: 15px; stroke: var(--honey); fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+    .contact-form { display: flex; flex-direction: column; gap: 1.1rem; }
+    .form-group { display: flex; flex-direction: column; gap: 0.35rem; }
+    label { font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); }
     input, textarea, select {
-      background: var(--warm);
-      border: 1px solid var(--border);
-      border-radius: 2px;
-      padding: 0.85rem 1rem;
-      font-family: var(--sans);
-      font-size: 0.95rem;
-      color: var(--ink);
-      outline: none;
-      transition: border-color 0.2s;
-      width: 100%;
+      background: var(--warm); border: 1px solid var(--border); border-radius: 2px;
+      padding: 0.8rem 1rem; font-family: var(--sans); font-size: 0.93rem;
+      color: var(--ink); outline: none; transition: border-color 0.2s; width: 100%;
+      -webkit-appearance: none; appearance: none;
     }
     input:focus, textarea:focus, select:focus { border-color: var(--honey); }
-    textarea { resize: vertical; min-height: 120px; }
+    textarea { resize: vertical; min-height: 105px; }
+    input.invalid, textarea.invalid, select.invalid { border-color: var(--honey); background: #fdf6ee; }
+    .field-error { font-size: 0.7rem; color: var(--honey); margin-top: 0.18rem; display: none; }
+    .field-error.show { display: block; }
     .btn-submit {
-      padding: 0.95rem 2.5rem;
-      background: var(--honey);
-      color: #fff;
-      font-family: var(--sans);
-      font-size: 0.8rem;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      border: none; cursor: pointer; border-radius: 2px;
-      transition: background 0.25s, transform 0.2s;
-      align-self: flex-start;
+      padding: 0.88rem 2.4rem; background: var(--honey); color: #fff;
+      font-family: var(--sans); font-size: 0.78rem; letter-spacing: 0.1em;
+      text-transform: uppercase; border: none; cursor: pointer; border-radius: 2px;
+      transition: background 0.25s, transform 0.2s; align-self: flex-start;
     }
     .btn-submit:hover { background: var(--ink); transform: translateY(-1px); }
 
+    /* ── BACK TO TOP ── */
+    .back-to-top {
+      position: fixed; bottom: 5.5rem; right: 2rem; z-index: 99;
+      width: 40px; height: 40px; background: var(--honey);
+      border: none; border-radius: 2px; cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+      opacity: 0; transform: translateY(10px);
+      transition: opacity 0.3s, transform 0.3s, background 0.2s; pointer-events: none;
+    }
+    .back-to-top.visible { opacity: 1; transform: none; pointer-events: auto; }
+    .back-to-top:hover { background: var(--ink); }
+    .back-to-top svg { width: 15px; height: 15px; stroke: #fff; fill: none; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+
     /* ── FOOTER ── */
     footer {
-      padding: 2.5rem 4rem;
-      border-top: 1px solid var(--border);
+      padding: 2rem 4rem; border-top: 1px solid var(--border);
       display: flex; justify-content: space-between; align-items: center;
     }
-    .footer-name { font-family: var(--serif); font-size: 1rem; color: var(--muted); }
-    .footer-copy { font-size: 0.78rem; color: var(--muted); }
+    .footer-linkedin {
+      display: inline-flex; align-items: center; gap: 0.45rem;
+      text-decoration: none; font-family: var(--serif); font-size: 1rem;
+      color: var(--muted); transition: color 0.2s;
+    }
+    .footer-linkedin:hover { color: var(--honey); }
+    .footer-linkedin svg { width: 15px; height: 15px; fill: currentColor; flex-shrink: 0; }
+    .footer-copy { font-size: 0.76rem; color: var(--muted); }
+
+    /* Fixed WhatsApp button — right side, below back-to-top, shown on all devices */
+    .whatsapp-btn {
+      position: fixed; bottom: 2rem; right: 2rem; z-index: 99;
+      width: 40px; height: 40px;
+      background: #25d366; border-radius: 2px;
+      display: flex; align-items: center; justify-content: center;
+      cursor: pointer; text-decoration: none;
+      box-shadow: 0 2px 10px rgba(37,211,102,0.3);
+      transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
+    }
+    .whatsapp-btn:hover { transform: translateY(-2px); box-shadow: 0 4px 16px rgba(37,211,102,0.4); background: #1fb855; }
+    .whatsapp-btn svg { width: 20px; height: 20px; fill: #fff; }
 
     /* ── ANIMATIONS ── */
-    @keyframes fadeDown {
-      from { opacity: 0; transform: translateY(-16px); }
-      to   { opacity: 1; transform: translateY(0); }
+    @keyframes fadeDown { from{opacity:0;transform:translateY(-16px)} to{opacity:1;transform:translateY(0)} }
+    @keyframes fadeUp   { from{opacity:0;transform:translateY(24px)}  to{opacity:1;transform:translateY(0)} }
+    .reveal { opacity:0; transform:translateY(24px); transition:opacity 0.7s ease,transform 0.7s ease; }
+    .reveal.visible { opacity:1; transform:none; }
+
+    /* ── BACK TO TOP ── */
+    .back-to-top {
+      position: fixed; bottom: 5.5rem; right: 2rem; z-index: 99;
+      width: 40px; height: 40px; background: var(--honey);
+      border: none; border-radius: 2px; cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+      opacity: 0; transform: translateY(10px);
+      transition: opacity 0.3s, transform 0.3s, background 0.2s; pointer-events: none;
     }
-    @keyframes fadeUp {
-      from { opacity: 0; transform: translateY(24px); }
-      to   { opacity: 1; transform: translateY(0); }
+    .back-to-top.visible { opacity: 1; transform: none; pointer-events: auto; }
+    .back-to-top:hover { background: var(--ink); }
+    .back-to-top svg { width: 15px; height: 15px; stroke: #fff; fill: none; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+
+    /* ── FREE CONSULT BANNER ── */
+    .consult-banner {
+      background: var(--honey); color: #fff;
+      text-align: center; padding: 0.75rem 2rem;
+      font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase;
+      display: flex; align-items: center; justify-content: center; gap: 1rem;
+    }
+    .consult-banner strong { font-weight: 500; }
+    .consult-banner a {
+      color: #fff; text-decoration: underline; text-underline-offset: 3px;
+      transition: opacity 0.2s;
+    }
+    .consult-banner a:hover { opacity: 0.8; }
+
+    /* ── STAR RATINGS ── */
+    .stars {
+      display: flex; gap: 2px; margin-bottom: 0.6rem;
+    }
+    .stars svg { width: 13px; height: 13px; fill: var(--honey); }
+
+    /* ── PRINT ── */
+    @media print {
+      nav,#preloader,.back-to-top,.hero-visual,.hero-watermark,.hero-accent-line,.testimonials,#contact,footer,.mobile-menu { display:none !important; }
+      body { font-size:12pt; color:#000; background:#fff; }
+      body::after { display:none; }
+      .hero { min-height:auto; padding:1rem 0; display:block; }
+      .about,.about-inner { min-height:auto; display:block; padding:1rem 0; }
+      section#services { min-height:auto; display:block; padding:1rem 0; }
+      .services-grid { grid-template-columns:repeat(2,1fr); gap:1rem; }
+      .service-card { border:1px solid #ccc !important; break-inside:avoid; transform:none !important; }
+      .reveal { opacity:1; transform:none; }
+      @page { margin:2cm; }
     }
 
-    .reveal {
-      opacity: 0; transform: translateY(30px);
-      transition: opacity 0.7s ease, transform 0.7s ease;
-    }
-    .reveal.visible { opacity: 1; transform: none; }
-
-    /* ── RESPONSIVE ── */
+    /* ── MOBILE ── */
     @media (max-width: 900px) {
-      nav { padding: 1.2rem 2rem; }
-      nav .nav-links { display: none; }
-      .hero { grid-template-columns: 1fr; padding: 7rem 2rem 4rem; text-align: center; }
-      .hero-text { max-width: 100%; }
-      .hero-desc { margin: 0 auto 2.5rem; }
-      .hero-visual { margin-top: 2rem; }
-      .about-inner,
-      .contact-inner { grid-template-columns: 1fr; gap: 3rem; }
-      .services-grid,
+      nav#mainNav { padding: 0 1.5rem; }
+      nav#mainNav .nav-links { display: none; }
+      .hamburger { display: flex; }
+      .mobile-menu { display: flex; }
+
+      .hero, .about, section#services { min-height: auto; }
+
+      /* Hero: text only, no card, fits one phone screen */
+      .hero {
+        display: flex; flex-direction: column;
+        justify-content: center; align-items: center;
+        text-align: center;
+        min-height: 100svh;
+        padding: calc(var(--nav-h) + 1.2rem) 1.5rem 2rem;
+        gap: 0;
+      }
+      .hero-accent-line { display: none; }
+      .hero-text { max-width: 100%; padding-left: 0; width: 100%; }
+      .hero-eyebrow { justify-content: center; font-size: 0.65rem; margin-bottom: 1rem; }
+      .hero-eyebrow::before { display: none; }
+      .hero-name { font-size: clamp(2.2rem, 9vw, 3.2rem); margin-bottom: 1rem; }
+      .hero-desc { font-size: 0.88rem; margin: 0 auto 1.2rem; max-width: 290px; line-height: 1.65; }
+      .hero-pills { justify-content: center; margin-bottom: 1.4rem; }
+      .btn-primary { margin: 0 auto; }
+      /* Hide card and trust strip — too much content for phone hero */
+      .hero-visual { display: none; }
+
+      /* About: tighter spacing, fits screen */
+      .about { padding: 2.5rem 1.5rem; align-items: flex-start; min-height: auto; }
+      .about-inner { grid-template-columns: 1fr; gap: 1.4rem; }
+      .about-body { font-size: 0.88rem; }
+      .about-body p + p { margin-top: 0.65rem; }
+      .credentials { margin-top: 1rem; }
+      .divider { margin: 0.9rem 0; }
+
+      section#services { padding: 2.5rem 1.5rem; align-items: flex-start; min-height: auto; }
+      .services-grid { grid-template-columns: 1fr; gap: 0.8rem; margin-top: 1rem; }
+
+      .testimonials { padding: 2.5rem 1.5rem; }
       .testimonials-grid { grid-template-columns: 1fr; }
-      section { padding: 4rem 2rem; }
-      footer { flex-direction: column; gap: 1rem; text-align: center; }
+
+      #contact { padding: 2.5rem 1.5rem; min-height: auto; display: block; }
+      .contact-inner { grid-template-columns: 1fr; gap: 2rem; }
+
+      /* Consult banner: short text on mobile */
+      .consult-banner { font-size: 0.65rem; padding: 0.55rem 1rem; gap: 0.4rem; flex-wrap: wrap; justify-content: center; }
+      .consult-banner .banner-long { display: none; }
+
+      footer { flex-direction: column; gap: 0.7rem; text-align: center; padding: 1.5rem; }
+      /* Show fixed WhatsApp on mobile, right side below back-to-top */
+      .whatsapp-btn {
+        display: flex;
+        bottom: 2rem; right: 2rem;
+      }
+      .back-to-top { bottom: 5.5rem; right: 2rem; }
     }
   </style>
 </head>
 <body>
 
+  <div id="preloader" aria-hidden="true"><span class="preloader-text">NH</span></div>
+
   <!-- NAV -->
-  <nav>
-    <a href="#" class="nav-logo">Nisha Hansewraj</a>
+  <nav id="mainNav">
+    <a href="https://www.linkedin.com/in/nishahansewraj/" target="_blank" rel="noopener" class="nav-logo">Nisha Hansewraj</a>
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
       <li><a href="#services">Services</a></li>
       <li><a href="#testimonials">Testimonials</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
+    <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
   </nav>
 
-  <!-- HERO -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about" class="mobile-link">About</a>
+    <a href="#services" class="mobile-link">Services</a>
+    <a href="#testimonials" class="mobile-link">Testimonials</a>
+    <a href="#contact" class="mobile-link">Contact</a>
+  </div>
+
+  <!-- ═══ HERO ═══ -->
   <section class="hero">
+    <!-- Vertical accent line -->
+    <span class="hero-accent-line" aria-hidden="true"></span>
+
     <div class="hero-text">
-      <p class="hero-eyebrow">Accounting & Finance · Brentford, London</p>
+      <p class="hero-eyebrow">Accounting & Finance · Brentford, London · Working UK-wide</p>
       <h1 class="hero-name">Clear finances,<br><em>real clarity.</em></h1>
-      <p class="hero-desc">I help individuals, the self-employed, and small businesses take control of their numbers — so they can focus on what they actually do best.</p>
-      <a href="#contact" class="btn-primary">Get in touch</a>
+      <p class="hero-desc">I help individuals, the self-employed, and small businesses take control of their numbers — so they can focus on what they do best.</p>
+
+      <!-- Service pills -->
+      <div class="hero-pills" aria-label="Services offered">
+        <span class="hero-pill">Bookkeeping</span>
+        <span class="hero-pill">Tax</span>
+        <span class="hero-pill">VAT Returns</span>
+        <span class="hero-pill">Payroll</span>
+        <span class="hero-pill">Reporting</span>
+      </div>
+
+      <a href="#contact" class="btn-primary">
+        Get in touch
+        <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
     </div>
+
     <div class="hero-visual">
       <div class="hero-card">
-        <div class="avatar-circle">NH</div>
+        <div class="avatar-circle">
+          NH
+          <!-- Replace with: <img class="avatar-photo" src="nisha.jpg" alt="Nisha Hansewraj"> -->
+        </div>
+        <p class="availability-label">
+          <span class="avail-dot"></span>
+          Taking new clients
+        </p>
         <div class="hero-card-name">Nisha Hansewraj</div>
         <div class="hero-card-title">Accounting & Finance Professional</div>
         <div class="hero-card-stats">
           <div class="stat">
-            <div class="stat-num">—</div>
-            <div class="stat-label">Years exp.</div>
+            <div class="stat-num" data-target="0">—</div>
+            <div class="stat-label">Years</div>
           </div>
           <div class="stat">
-            <div class="stat-num">—</div>
+            <div class="stat-num" data-target="0">—</div>
             <div class="stat-label">Clients</div>
           </div>
           <div class="stat">
-            <div class="stat-num">—</div>
+            <div class="stat-num" data-target="0">—</div>
             <div class="stat-label">On time</div>
           </div>
         </div>
       </div>
+
+      <!-- Trust strip below card -->
+      <div class="hero-trust">
+        <span class="hero-trust-item">
+          <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          HMRC Compliant
+        </span>
+        <span class="hero-trust-item">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          Fast turnaround
+        </span>
+        <span class="hero-trust-item">
+          <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          Free first consult
+        </span>
+      </div>
     </div>
   </section>
+
+  <hr class="section-divider" />
 
   <!-- ABOUT -->
   <section class="about" id="about">
@@ -445,46 +682,73 @@
     </div>
   </section>
 
+  <hr class="section-divider" />
+
+  <!-- FREE CONSULT BANNER -->
+  <div class="consult-banner">
+    <strong>Free first consultation</strong>
+    <span class="banner-long">— no obligation, no jargon. Just a straight conversation about your numbers.</span>
+    <a href="#contact">Book yours →</a>
+  </div>
+
   <!-- SERVICES -->
   <section id="services">
     <div class="services-inner reveal">
-      <p class="section-label">What I do</p>
-      <h2 class="section-title">Services</h2>
-      <div class="divider"></div>
+      <div class="services-header">
+        <p class="section-label">What I do</p>
+        <h2 class="section-title">Services</h2>
+        <div class="divider"></div>
+      </div>
       <div class="services-grid">
+
         <div class="service-card">
-          <span class="service-icon">📒</span>
+          <span class="service-badge">Discounted monthly rate</span>
+          <span class="service-icon"><svg viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/><line x1="9" y1="10" x2="15" y2="10"/><line x1="9" y1="14" x2="13" y2="14"/></svg></span>
           <div class="service-name">Bookkeeping</div>
-          <p class="service-desc">Accurate, up-to-date financial records for your business — including transaction recording, account reconciliations, and accounts clean-up to get your books in order.</p>
+          <p class="service-desc">Accurate financial records — transaction recording, reconciliations, and accounts clean-up.</p>
+          <span class="service-arrow">Enquire <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
         </div>
+
         <div class="service-card">
-          <span class="service-icon">🧾</span>
+          <span class="service-icon"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/><polyline points="6 9 9 12 13 8 17 11"/></svg></span>
           <div class="service-name">VAT Returns</div>
-          <p class="service-desc">Preparation and submission of VAT returns on your behalf — filed accurately and on time, whatever VAT scheme you're on.</p>
+          <p class="service-desc">Preparation and submission of VAT returns — filed accurately and on time, whatever scheme you're on.</p>
+          <span class="service-arrow">Enquire <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
         </div>
+
         <div class="service-card">
-          <span class="service-icon">📋</span>
+          <span class="service-icon"><svg viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></span>
           <div class="service-name">Tax Preparation</div>
-          <p class="service-desc">Self-assessment tax returns, tax planning, and quarterly estimated payments — for the self-employed and individuals who want to stay compliant and minimise their liability.</p>
+          <p class="service-desc">Self-assessment returns, tax planning, and quarterly payments for the self-employed and individuals.</p>
+          <span class="service-arrow">Enquire <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
         </div>
+
         <div class="service-card">
-          <span class="service-icon">🏢</span>
+          <span class="service-icon"><svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></span>
           <div class="service-name">SME Accounting</div>
-          <p class="service-desc">Company accounts, financial statements, and management reports for small and medium businesses — giving you a clear picture of where your business stands.</p>
+          <p class="service-desc">Company accounts, financial statements, and management reports for small businesses.</p>
+          <span class="service-arrow">Enquire <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
         </div>
+
         <div class="service-card">
-          <span class="service-icon">📊</span>
+          <span class="service-icon"><svg viewBox="0 0 24 24"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/><line x1="2" y1="20" x2="22" y2="20"/></svg></span>
           <div class="service-name">Financial Reporting</div>
-          <p class="service-desc">Customised reports, cash flow statements, budgets, and forecasts to help you understand your financial performance and plan ahead with confidence.</p>
+          <p class="service-desc">Cash flow statements, budgets, and forecasts to help you plan ahead with confidence.</p>
+          <span class="service-arrow">Enquire <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
         </div>
+
         <div class="service-card">
-          <span class="service-icon">💼</span>
+          <span class="service-icon"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
           <div class="service-name">Payroll</div>
-          <p class="service-desc">Payroll processing for businesses with employees — including payroll journals, payslip preparation, and submissions to ensure your team gets paid correctly and on time.</p>
+          <p class="service-desc">Payroll processing, payslip preparation, and RTI submissions — your team paid correctly, on time.</p>
+          <span class="service-arrow">Enquire <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
         </div>
+
       </div>
     </div>
   </section>
+
+  <hr class="section-divider" />
 
   <!-- TESTIMONIALS -->
   <section class="testimonials" id="testimonials">
@@ -494,18 +758,39 @@
       <div class="divider"></div>
       <div class="testimonials-grid">
         <div class="testimonial-card">
+          <div class="stars">
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
           <div class="quote-mark">"</div>
           <p class="quote-text">Testimonial coming soon.</p>
           <div class="quote-author">—</div>
           <div class="quote-role">Client</div>
         </div>
         <div class="testimonial-card">
+          <div class="stars">
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
           <div class="quote-mark">"</div>
           <p class="quote-text">Testimonial coming soon.</p>
           <div class="quote-author">—</div>
           <div class="quote-role">Client</div>
         </div>
         <div class="testimonial-card">
+          <div class="stars">
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
           <div class="quote-mark">"</div>
           <p class="quote-text">Testimonial coming soon.</p>
           <div class="quote-author">—</div>
@@ -515,6 +800,8 @@
     </div>
   </section>
 
+  <hr class="section-divider" />
+
   <!-- CONTACT -->
   <section id="contact">
     <div class="contact-inner reveal">
@@ -522,25 +809,36 @@
         <p class="section-label">Get in touch</p>
         <h2 class="section-title">Let's talk<br><em>numbers.</em></h2>
         <div class="divider"></div>
-        <p class="contact-sub">Whether you have a question, need a quote, or just want to understand your options — feel free to reach out. Files can be shared via email or Dropbox.</p>
+        <p class="contact-sub">Whether you have a question, need a quote, or want to understand your options — feel free to reach out. Files can be shared via email or Dropbox.</p>
         <div class="contact-info">
-          <div class="contact-row"><span>✉</span><span>[email address]</span></div>
-          <div class="contact-row"><span>📍</span><span>Brentford, London</span></div>
-          <div class="contact-row"><span>🕐</span><span>Mon–Fri, 9am–6pm</span></div>
+          <div class="contact-row">
+            <span class="contact-icon"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></span>
+            <span>[email address]</span>
+          </div>
+          <div class="contact-row">
+            <span class="contact-icon"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+            <span>Brentford, London</span>
+          </div>
+          <div class="contact-row">
+            <span class="contact-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span>
+            <span>Mon–Fri, 9am–6pm</span>
+          </div>
         </div>
       </div>
-      <form class="contact-form" onsubmit="handleSubmit(event)">
+      <form class="contact-form" id="contactForm" onsubmit="handleSubmit(event)" novalidate>
         <div class="form-group">
-          <label for="name">Your name</label>
-          <input type="text" id="name" placeholder="Jane Smith" />
+          <label for="fname">Your name</label>
+          <input type="text" id="fname" placeholder="Jane Smith" autocomplete="name" />
+          <span class="field-error" id="fnameError">Please enter your name</span>
         </div>
         <div class="form-group">
-          <label for="email">Email address</label>
-          <input type="email" id="email" placeholder="jane@example.com" />
+          <label for="femail">Email address</label>
+          <input type="email" id="femail" placeholder="jane@example.com" autocomplete="email" />
+          <span class="field-error" id="femailError">Please enter a valid email</span>
         </div>
         <div class="form-group">
-          <label for="service">Service interested in</label>
-          <select id="service">
+          <label for="fservice">Service interested in</label>
+          <select id="fservice">
             <option value="">Select a service…</option>
             <option>Bookkeeping</option>
             <option>VAT Returns</option>
@@ -552,34 +850,184 @@
           </select>
         </div>
         <div class="form-group">
-          <label for="message">Message</label>
-          <textarea id="message" placeholder="Tell me a little about your situation…"></textarea>
+          <label for="fmessage">Message</label>
+          <textarea id="fmessage" placeholder="Tell me a little about your situation…"></textarea>
+          <span class="field-error" id="fmessageError">Please include a message</span>
         </div>
         <button type="submit" class="btn-submit">Send message</button>
       </form>
     </div>
   </section>
 
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"></polyline></svg>
+  </button>
+
   <!-- FOOTER -->
   <footer>
-    <span class="footer-name">Nisha Hansewraj</span>
-    <span class="footer-copy">© 2026 · All rights reserved</span>
+    <a href="https://www.linkedin.com/in/nishahansewraj/" target="_blank" rel="noopener" class="footer-linkedin">
+      <svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+      Nisha Hansewraj
+    </a>
+    <span class="footer-copy">© <span id="year"></span> · All rights reserved</span>
   </footer>
 
-  <script>
-    const reveals = document.querySelectorAll('.reveal');
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); } });
-    }, { threshold: 0.12 });
-    reveals.forEach(el => observer.observe(el));
+  <!-- Fixed WhatsApp — mobile only, right side stacked below back-to-top -->
+  <a class="whatsapp-btn" href="https://wa.me/447598021151?text=Hi%20Nisha%2C%20I%27d%20like%20to%20enquire%20about%20your%20services." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
 
+  <script>
+    // ── Preloader ──
+    window.addEventListener('load', () => {
+      setTimeout(() => document.getElementById('preloader').classList.add('done'), 400);
+    });
+
+    // ── Year ──
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // ── Scroll reveal ──
+    document.querySelectorAll('.reveal').forEach(el => {
+      new IntersectionObserver(
+        entries => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }),
+        { threshold: 0.08 }
+      ).observe(el);
+    });
+
+    // ── Nav hide/show ──
+    const mainNav = document.getElementById('mainNav');
+    let lastScroll = 0;
+    window.addEventListener('scroll', () => {
+      const cur = window.scrollY;
+      if (!document.getElementById('mobileMenu').classList.contains('open')) {
+        mainNav.classList.toggle('hide', cur > lastScroll && cur > 120);
+      }
+      lastScroll = Math.max(0, cur);
+    }, { passive: true });
+
+    // ── Nav active ──
+    const navLinks = document.querySelectorAll('.nav-links a');
+    new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          navLinks.forEach(a => a.classList.remove('active'));
+          const link = document.querySelector(`.nav-links a[href="#${entry.target.id}"]`);
+          if (link) link.classList.add('active');
+        }
+      });
+    }, { rootMargin: '-40% 0px -55% 0px' })
+    .observe(...(function(){ const s=document.querySelectorAll('section[id]'); return Array.from(s); })());
+
+    // Observe all sections properly
+    const secObs = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          navLinks.forEach(a => a.classList.remove('active'));
+          const link = document.querySelector(`.nav-links a[href="#${entry.target.id}"]`);
+          if (link) link.classList.add('active');
+        }
+      });
+    }, { rootMargin: '-40% 0px -55% 0px' });
+    document.querySelectorAll('section[id]').forEach(s => secObs.observe(s));
+
+    // ── Hamburger ──
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    hamburger.addEventListener('click', () => {
+      const open = hamburger.classList.toggle('open');
+      mobileMenu.classList.toggle('open', open);
+      hamburger.setAttribute('aria-expanded', String(open));
+      hamburger.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+      if (open) mainNav.classList.remove('hide');
+    });
+    document.querySelectorAll('.mobile-link').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('open');
+        mobileMenu.classList.remove('open');
+        hamburger.setAttribute('aria-expanded', 'false');
+        hamburger.setAttribute('aria-label', 'Open menu');
+      });
+    });
+    document.addEventListener('click', (e) => {
+      if (!mainNav.contains(e.target) && !mobileMenu.contains(e.target)) {
+        hamburger.classList.remove('open');
+        mobileMenu.classList.remove('open');
+        hamburger.setAttribute('aria-expanded', 'false');
+      }
+    });
+
+    // ── Back to top ──
+    const topBtn = document.getElementById('backToTop');
+    window.addEventListener('scroll', () => topBtn.classList.toggle('visible', window.scrollY > 400), { passive: true });
+    topBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+    // ── Animated stat counters ──
+    // Update these values when Nisha confirms her real numbers
+    const statTargets = [
+      { suffix: '+',  target: 0 },  // years — replace 0 with e.g. 8
+      { suffix: '+',  target: 0 },  // clients — replace 0 with e.g. 50
+      { suffix: '%',  target: 0 },  // on time — replace 0 with e.g. 100
+    ];
+
+    function animateCounter(el, target, suffix) {
+      if (target === 0) return; // leave as dash if not set yet
+      let start = null;
+      const duration = 1400;
+      const step = (timestamp) => {
+        if (!start) start = timestamp;
+        const progress = Math.min((timestamp - start) / duration, 1);
+        const eased = 1 - Math.pow(1 - progress, 3);
+        el.textContent = Math.floor(eased * target) + suffix;
+        if (progress < 1) requestAnimationFrame(step);
+      };
+      requestAnimationFrame(step);
+    }
+
+    const statEls = document.querySelectorAll('.stat-num');
+    const heroCard = document.querySelector('.hero-card');
+    if (heroCard) {
+      new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            statEls.forEach((el, i) => {
+              if (statTargets[i]) animateCounter(el, statTargets[i].target, statTargets[i].suffix);
+            });
+          }
+        });
+      }, { threshold: 0.5 }).observe(heroCard);
+    }
+
+    // ── Form validation ──
+    const fields = [
+      { id: 'fname',    errId: 'fnameError',    check: v => v.trim().length > 0 },
+      { id: 'femail',   errId: 'femailError',   check: v => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v.trim()) },
+      { id: 'fmessage', errId: 'fmessageError', check: v => v.trim().length > 0 },
+    ];
+    function validate() {
+      let ok = true;
+      fields.forEach(({ id, errId, check }) => {
+        const el = document.getElementById(id);
+        const err = document.getElementById(errId);
+        el.classList.remove('invalid'); err.classList.remove('show');
+        if (!check(el.value)) { el.classList.add('invalid'); err.classList.add('show'); ok = false; }
+      });
+      return ok;
+    }
     function handleSubmit(e) {
       e.preventDefault();
+      if (!validate()) return;
       const btn = e.target.querySelector('.btn-submit');
       btn.textContent = 'Message sent ✓';
       btn.style.background = '#4a7c59';
+      e.target.reset();
       setTimeout(() => { btn.textContent = 'Send message'; btn.style.background = ''; }, 3000);
     }
+    fields.forEach(({ id, errId }) => {
+      document.getElementById(id).addEventListener('input', function () {
+        this.classList.remove('invalid');
+        document.getElementById(errId).classList.remove('show');
+      });
+    });
   </script>
 
 </body>
